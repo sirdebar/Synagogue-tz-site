@@ -1,0 +1,41 @@
+.header__wrapper {
+    width: 100%;
+    max-height: 89px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    position: fixed;
+    background-color: rgba(3, 0, 20, 0.091);
+    backdrop-filter: blur(10px);
+    z-index: 50;
+}
+
+.header__logo img {
+    max-width: 50px;
+}
+
+.header__nav {
+    display: flex;
+    gap: 20px;
+    font-family: MM;
+    font-size: 17px;
+}
+
+/* Добавляем цвет текста для ссылок в навигации */
+.header__nav a {
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .header__wrapper {
+        align-items: center;
+        padding: 10px; /* Уменьшаем padding для хедера на малых экранах */
+    }
+
+    .header__logo img {
+        max-width: 30px;
+    }
+}

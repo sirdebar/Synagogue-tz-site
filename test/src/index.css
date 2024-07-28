@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "MB";
+  src:
+    local("Montserrat"),
+    url("../public/fonts/Montserrat-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "MM";
+  src:
+    local("Montserrat"),
+    url("../public/fonts/Montserrat-Medium.ttf") format("ttf");
+}

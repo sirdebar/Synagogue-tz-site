@@ -1,0 +1,71 @@
+@keyframes wave {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.banner__container {
+    background: linear-gradient(270deg, #0040be, #002080, #0040be);
+    background-size: 400% 400%;
+    animation: wave 10s ease infinite;
+    height: 25vh;
+    padding: 45px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 10px;
+    transform: translateY(-100%);
+    animation: slideDown 1s ease forwards;
+    align-items: center;
+}
+
+.banner__component {
+    font-family: MB;
+    font-weight: 400;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+.banner__component:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.banner__component:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.banner__component:nth-child(3) {
+    animation-delay: 3s;
+}
+
+.banner__component p {
+    padding-top: 10px;
+    font-family: MM;
+}

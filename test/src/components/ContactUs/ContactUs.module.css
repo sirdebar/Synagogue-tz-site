@@ -1,0 +1,92 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    font-family: MM;
+}
+
+.infoSection {
+    flex: 1;
+    padding: 20px;
+    font-family: MB;
+}
+
+.infoSection h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.infoSection p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.location {
+    margin-bottom: 30px;
+}
+
+.location h3 {
+    color: red;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.location div h3 {
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.location p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.formSection {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #666;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: gray;
+}
+
+textarea {
+    resize: none;
+    height: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4c4c;
+}
